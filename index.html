@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap-CDN</title>
+  <!-- link to Bootstrap files via CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <!-- link to Bootstrap icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- link to BootStrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="#">AuroraTours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#packages">Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-------------------------------------------------- Modal-------------------------------------->
+
+    <section class="modal fade" tabindex="-1" id="booking-modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <form action="#">
+              <div class="row g-2">
+
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input id="email1" type="email" class="form-control" placeholder="Your email">
+                    <label for="email1">Email address</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select id="select1" class="form-select">
+                      <option>Tromso, Norway - $899</option>
+                      <option>Reykjavik, Iceland - 799$</option>
+                      <option>Yukon, Canada - $849</option>
+                    </select>
+                    <label for="email1">Pick a tour</label>
+                  </div>
+                </div>
+
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------- Carosal-------------------------------------->
+
+    <section id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img
+            src="https://images.pexels.com/photos/360912/pexels-photo-360912.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block w-100 c-img" alt="Northern Lights">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-3 mt-5 text-uppercase">Explore the mystical realm
+            <p>
+            <h1 class="display-1 fw-bolder text-capitalize">Northern Lights Adventures</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Reserve your spot</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="https://images.pexels.com/photos/1933317/pexels-photo-1933317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block w-100 c-img" alt="Northern Lights">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-3 mt-5 text-uppercase">Uncover the secret universe
+            <p>
+            <h1 class="display-1 fw-bolder text-capitalize">Aurora Expedition</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Secure your journey</button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img
+            src="https://images.pexels.com/photos/1938348/pexels-photo-1938348.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            class="d-block w-100 c-img" alt="Northern Lights">
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-3 mt-5 text-uppercase">Reveal the concealed dimension
+            <p>
+            <h1 class="display-1 fw-bolder text-capitalize">Aurora Adventures</h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+              data-bs-target="#booking-modal">Book your excursion</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </section>
+
+    <!-------------------------------------------------- Overview -------------------------------------->
+
+    <section class="overview">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+          <div class="col-xl">
+            <i class="bi bi-airplane-fill me-2"></i>
+            3 Amazing Destinations
+          </div>
+          <div class="col-xl">
+            <i class="bi bi-wallet-fill me-2"></i>
+            Only pay 5% up front
+          </div>
+          <div class="col-xl">
+            <i class="bi bi-patch-check-fill me-2"></i>
+            1000's of customers
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-------------------------------------------------- Packages -------------------------------------->
+
+    <section id="packages" class="pt-md-5">
+      <h2 class="text-center my-5">Packages</h2>
+
+      <div class="container">
+
+        <div class="row g-3">
+
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/10657298/pexels-photo-10657298.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Tromso, Norway - 1199$</h5>
+                <p class="card-text">
+                  Witness the Northern Lights in Tromso, Norway! Enjoy the aurora, cozy stays, and thrilling adventures.
+                  Reserve your spot for an unforgettable experience!</p>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Reserve your spot</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/13708612/pexels-photo-13708612.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Reykjavik, Iceland - 999$</h5>
+                <p class="card-text">Discover the Northern Lights in Reykjavik, Iceland! See the aurora, comfy stays,
+                  and exciting excursions. Book now for a magical adventure!</p>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Reserve your spot</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg">
+            <div class="card">
+              <img
+                src="https://images.pexels.com/photos/11546829/pexels-photo-11546829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Yukon, Canada - 699$</h5>
+                <p class="card-text">
+                  Explore the Northern Lights in Yukon, Canada! Experience the aurora, affordable rates, and thrilling
+                  activities. Secure your spot for an amazing journey!</p>
+                <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+                  data-bs-target="#booking-modal">Reserve your spot</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-------------------------------------------------- FAQ -------------------------------------->
+
+    <section id="faq" class="py-md-5">
+      <h2 class="my-5 text-center">FAQ</h2>
+
+
+      <div class="container">
+        <div class="accordion w-75 mx-auto" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                What can I expect from the Tromso, Norway tour?
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>You can expect a mesmerizing experience in Tromso, Norway! Our tour offers a front-row seat to
+                  witness the enchanting Northern Lights, comfortable accommodations, and thrilling adventures. Reserve
+                  your spot today for an unforgettable journey!</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                What's included in the Reykjavik, Iceland tour package?
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Our Reykjavik, Iceland tour package includes the chance to witness the Northern Lights, comfortable
+                  accommodations, and exciting excursions. Book now for a magical adventure under the Arctic night sky!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                What activities are available in the Yukon, Canada tour?
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>Our Yukon, Canada tour offers the opportunity to explore the Northern Lights, enjoy affordable rates,
+                  and participate in thrilling activities. Secure your spot for an amazing journey through Canada's
+                  stunning landscapes!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+    <!-------------------------------------------------- Footer -------------------------------------->
+
+  <footer class="bg-dark py-5 mt-5">
+    <div class="container text-light text-center">
+      <p class="display-5 mb-3">AuroraTours</p>
+      <small class="text-white-50">&copy; Copyright by AuroraTours. All rights reserved.</small>
+    </div>
+  </footer>
+
+</body>
+
+</html>
